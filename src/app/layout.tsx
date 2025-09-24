@@ -29,14 +29,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl flex justify-between mx-auto ">
-          <div className="px-2 xs:px-4 2xl:px-8 bg-red-200 h-screen">
+        <div className="max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl flex justify-between mx-auto">
+          <div className="px-2 xs:px-4 2xl:px-8 h-screen border-[1px] border-borderGray">
             <LeftBar />
           </div>
-          <div className="flex-1 lg:min-w-[600px] border-[1px] border-borderGray bg-green-50 h-screen">
+          <div className="flex-1 lg:min-w-[600px] border-[1px] border-borderGray h-screen">
             {children}
           </div>
-          <div className="hidden lg:flex ml-4 md:ml-8 flex-1 bg-blue-200 h-screen">
+          <div className="hidden lg:flex ml-4 md:ml-8 flex-1 h-screen border-[1px] border-borderGray">
             <RightBar />
           </div>
         </div>
