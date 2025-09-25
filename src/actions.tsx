@@ -5,4 +5,5 @@ export const shareAction = async (formData: FormData) => {
   const desc = formData.get("desc") as string;
 
   console.log(file, desc);
+  console.log("file:", file)
 };
